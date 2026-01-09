@@ -1,0 +1,59 @@
+  # LiveKit Configuration for Podcast Studio
+# ==========================================
+
+# Server port
+port: 7880
+
+# RTC (Real-Time Communication) settings
+rtc:
+  # Ports for WebRTC media
+  port_range_start: 50000
+  port_range_end: 60000
+
+  # Use your public IP for participants outside your network
+  # Set to true if you have port forwarding enabled
+  use_external_ip: true
+
+  # TCP fallback for restrictive networks
+  tcp_port: 7881
+
+# API Keys for authentication
+# IMPORTANT: Change these for production!
+keys:
+  # Format: api_key: api_secret
+  devkey: secret
+  # Add more keys as needed:
+  # productionkey: your_secure_secret_here
+
+# Logging
+logging:
+  level: info
+  # Options: debug, info, warn, error
+
+# Room settings
+room:
+  # Auto-create rooms when first participant joins
+  auto_create: true
+
+  # Empty room timeout (seconds)
+  empty_timeout: 300
+
+  # Max participants per room (0 = unlimited)
+  max_participants: 20
+
+# TURN server (for NAT traversal)
+# Uncomment and configure if needed
+# turn:
+#   enabled: true
+#   udp_port: 3478
+#   tls_port: 5349
+#   external_tls: true
+
+# Redis (optional - for multi-node deployments)
+# redis:
+#   address: localhost:6379
+
+# Egress (Recording/Streaming) - requires separate egress service
+# egress:
+#   enabled: true
+

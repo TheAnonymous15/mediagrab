@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Gradient circle background -->
+    <path
+        android:pathData="M54,54m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0"
+        android:fillColor="#E91E63"/>
+
+    <!-- Inner glow circle -->
+    <path
+        android:pathData="M54,54m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0"
+        android:fillColor="#FF4081"/>
+
+    <!-- Music note icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,38v18c0,0 0,0.01 0,0.01C61.69,59.64 58.19,62 54,62c-4.42,0 -8,-2.58 -8,-5.75c0,-3.17 3.58,-5.75 8,-5.75c1.47,0 2.84,0.28 4,0.77V42h10v-4H62z"/>
+
+    <!-- Download arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,68l-6,-6h4v-6h4v6h4z"/>
+
+</vector>
+
